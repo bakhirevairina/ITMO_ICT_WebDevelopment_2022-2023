@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Bakhireva Irina">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Lab 2 - Project documentation</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Project documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Labs <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../lr1/" class="dropdown-item">Lab 1</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Lab 2</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Lab 3</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../lr3/" class="dropdown-item">Home</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">End Points</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">COMPANY</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../lab3/company_my_get/" class="dropdown-item">[ GET ] /company/my/</a>
+</li>
+            
+<li>
+    <a href="../lab3/company_my_vacancy_id_get/" class="dropdown-item">[ GET ] /company/my/vacancy/{ID}/</a>
+</li>
+            
+<li>
+    <a href="../lab3/company_my_vacancy_id_patch/" class="dropdown-item">[ PATCH ] /company/my/vacancy/{ID}/</a>
+</li>
+            
+<li>
+    <a href="../lab3/company_my_vacancy_id_cvs_get/" class="dropdown-item">[ GET ] /company/my/vacancy/{ID}/cvs/</a>
+</li>
+            
+<li>
+    <a href="../lab3/company_my_vacancys_get/" class="dropdown-item">[ GET ] /company/my/vacancys/</a>
+</li>
+            
+<li>
+    <a href="../lab3/company_my_vacancys_post/" class="dropdown-item">[ POST ] /company/my/vacancys/</a>
+</li>
+            
+<li>
+    <a href="../lab3/company_id_get/" class="dropdown-item">[ GET ] /company/{ID}/</a>
+</li>
+            
+<li>
+    <a href="../lab3/companys_get/" class="dropdown-item">[ GET ] /companys/</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">COURSES</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../lab3/courses_get/" class="dropdown-item">[ GET ] /courses/</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CV</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../lab3/cv_my_get/" class="dropdown-item">[ GET ] /cv/my/</a>
+</li>
+            
+<li>
+    <a href="../lab3/cv_my_patch/" class="dropdown-item">[ PATCH ] /cv/my/</a>
+</li>
+            
+<li>
+    <a href="../lab3/cv_my_courses_for_me_get/" class="dropdown-item">[ GET ] /cv/my/courses_for_me/</a>
+</li>
+            
+<li>
+    <a href="../lab3/cv_my_specializations_get/" class="dropdown-item">[ GET ] /cv/my/specializations/</a>
+</li>
+            
+<li>
+    <a href="../lab3/cv_my_vacancys_get/" class="dropdown-item">[ GET ] /cv/my/vacancys/</a>
+</li>
+            
+<li>
+    <a href="../lab3/cv_id_get/" class="dropdown-item">[ GET ] /cv/{ID}/</a>
+</li>
+            
+<li>
+    <a href="../lab3/cvs_get/" class="dropdown-item">[ GET ] /cvs/</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">SPECIALIZATIONS</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../lab3/specializations_get/" class="dropdown-item">[ GET ] /specializations/</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">VACANCIES</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../lab3/vacancy_id_get/" class="dropdown-item">[ GET ] /vacancy/{ID}/</a>
+</li>
+            
+<li>
+    <a href="../lab3/vacancys_get/" class="dropdown-item">[ GET ] /vacancys/</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../lr1/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../lr3/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#2" class="nav-link">Лабораторная работа 2</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_1" class="nav-link">Структура проекта</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">Настройки</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tourism" class="nav-link">Приложение tourism</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="2">Лабораторная работа 2</h1>
+<h2 id="_1">Структура проекта</h2>
+<ul>
+<li><code>laboratory_work_2</code> - основная директория django-проекта</li>
+<li><code>tourism</code> - основное приложение</li>
+<li><code>tourism/templates</code> - директория с html-шаблонами</li>
+</ul>
+<h2 id="_2">Настройки</h2>
+<ul>
+<li><code>laboratory_work_2/settings.py</code>  </li>
+</ul>
+<p><em>настройка путей и модели авторизации</em></p>
+<pre><code class="language-python">STATIC_URL = '/static/'
+LOGIN_REDIRECT_URL = '/'
+# Default primary key field type
+# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+AUTH_USER_MODEL = 'tourism.Tourist'
+</code></pre>
+<p><em>настройка приложений</em></p>
+<pre><code class="language-python">INSTALLED_APPS = [
+    'tourism',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+]
+</code></pre>
+<ul>
+<li><code>laboratory_work_2/urls.py</code>  </li>
+</ul>
+<p><em>добавление url приложения</em></p>
+<pre><code class="language-python">urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('tourism.urls')),
+]
+</code></pre>
+<h2 id="tourism">Приложение <code>tourism</code></h2>
+<ul>
+<li><code>admin.py</code></li>
+</ul>
+<pre><code class="language-python">from django.contrib import admin
+from tourism.models import Tour, Tourist, Reservation
+
+@admin.register(Tour, Tourist, Reservation)
+class Admin(admin.ModelAdmin):
+    pass
+</code></pre>
+<ul>
+<li><code>forms.py</code></li>
+</ul>
+<pre><code class="language-python">from django import forms
+from .models import Tourist, Reservation, Comment
+
+
+class SignupForm(forms.ModelForm):
+    class Meta:
+        model = Tourist
+        help_texts = {
+            'username': None,
+        }
+        fields = [
+            'username',
+            'first_name',
+            'last_name',
+            'password',
+        ]
+
+
+class ReserveForm(forms.ModelForm):
+    class Meta:
+        model = Reservation
+        fields = &quot;__all__&quot;
+
+
+class CommentForm(forms.ModelForm):
+    class Meta:
+        model = Comment
+        fields = [
+            'text',
+            'rating'
+        ]
+</code></pre>
+<ul>
+<li><code>models.py</code></li>
+</ul>
+<pre><code class="language-python">from django.db import models
+from django.contrib.auth.models import AbstractUser
+from django.conf import settings
+from django.core.validators import MaxValueValidator, MinValueValidator
+
+
+class Tourist(AbstractUser):
+    def __str__(self) -&gt; str:
+        return self.username
+
+
+class Tour(models.Model):
+    name = models.CharField(max_length=50)
+    agency = models.CharField(max_length=20)
+    country = models.CharField(max_length=20)
+    description = models.TextField()
+    start_date = models.DateField(auto_now_add=True, blank=True)
+    end_date = models.DateField(auto_now_add=True, blank=True)
+    terms_of_payment = models.CharField(max_length=50)
+    tourists = models.ManyToManyField('Tourist', through='Reservation')
+
+
+class Reservation(models.Model):
+    tourist = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    tour = models.ForeignKey('Tour', on_delete=models.CASCADE)
+    approved = models.BooleanField(default=False)
+
+
+class Comment(models.Model):
+    tour = models.ForeignKey('Tour', on_delete=models.CASCADE)
+    author = models.ForeignKey('Tourist', on_delete=models.CASCADE)
+    text = models.TextField()
+    rating = models.IntegerField(default=1, validators=[MaxValueValidator(10), MinValueValidator(1)])
+    publish_date = models.DateTimeField(auto_now_add=True)
+</code></pre>
+<ul>
+<li><code>urls.py</code></li>
+</ul>
+<pre><code class="language-python">from django.urls import path
+from django.contrib.auth import views
+import tourism.views
+
+
+urlpatterns = [
+    path('', tourism.views.view_table, name='view_table'),
+    path('login/', views.LoginView.as_view(), name='login'),
+    path('sign_out/', views.LogoutView.as_view(), name='sign_out'),
+    path('sign_up/', tourism.views.sign_up, name='sign_up'),
+    path('tours/', tourism.views.view_tours, name='view_tours'),
+    path('tours/&lt;int:pk&gt;', tourism.views.view_tour, name='view_tour'),
+    path('tours/&lt;int:pk&gt;/reserve', tourism.views.reserve_tour, name='reserve_tour'),
+    path('reservations/', tourism.views.view_reservations, name='view_reservations'),
+    path('reservations/&lt;int:pk&gt;/cancel', tourism.views.cancel_reservation, name='cancel_reservation'),
+]
+</code></pre>
+<ul>
+<li><code>views.py</code></li>
+</ul>
+<pre><code class="language-python">from django.shortcuts import render, redirect
+from django.http import Http404 
+from .forms import SignupForm, ReserveForm, CommentForm
+from .models import Tourist, Tour, Reservation, Comment
+
+
+def view_table(request):
+    ctx = {}
+    ctx['tours_by_country'] = {c: Tour.objects.filter(country=c) for c in list(dict.fromkeys([x.country for x in Tour.objects.all()]))}
+    return render(request, 'view_table.html',  ctx)
+
+
+def sign_up(request):
+    ctx = {}
+
+    form = SignupForm(request.POST or None)
+
+    if form.is_valid():
+        u = form.save(commit=False)
+        password = request.POST.dict().get('password')
+        u.set_password(password or 'password')
+        form.save()
+        return redirect('/login/')
+    ctx['form'] = form
+    return render(request, 'signup.html', ctx)
+
+
+def view_tours(request):
+    if not request.user.is_authenticated:
+        return redirect('/login/')
+    ctx = {}
+    ctx['tours'] = Tour.objects.all().order_by('country')
+    return render(request, 'view_tours.html', ctx)
+
+
+def view_tour(request, pk):
+    ctx = {}
+    try:
+        ctx['tour'] = Tour.objects.get(pk=pk)
+        ctx['comments'] = Comment.objects.filter(tour=pk)
+        form = CommentForm(request.POST or None)
+        ctx['form'] = form
+
+        if form.is_valid():
+            comment = form.save(commit=False)
+            comment.author = Tourist.objects.get(pk=request.user.id)
+            comment.tour = ctx['tour']
+            comment.save()
+    except Tour.DoesNotExist:
+        raise Http404(&quot;Такой тур не найден&quot;)
+    return render(request, 'view_tour.html', ctx)
+
+
+def reserve_tour(request, pk):
+    if not request.user.is_authenticated:
+        return redirect('/login/')
+    form = ReserveForm(request.POST or None)
+    reservation = form.save(commit=False)
+    reservation.tour = Tour.objects.get(pk=pk)
+    reservation.tourist = Tourist.objects.get(pk=request.user.id)
+    reservation.save()
+    return redirect(f'/reservations/')
+
+
+
+def view_reservations(request):
+    ctx = {}
+    if not request.user.is_authenticated:
+        return redirect('/login/')
+    ctx['reservations'] = Reservation.objects.filter(tourist=request.user.id)
+    return render(request, 'view_reservations.html', ctx)
+
+
+def cancel_reservation(request, pk):
+    if not request.user.is_authenticated:
+        return redirect('/login/')
+
+    reservation = Reservation.objects.get(pk=pk, tourist=request.user.id)
+    reservation.delete()
+    return redirect('/reservations/')
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
