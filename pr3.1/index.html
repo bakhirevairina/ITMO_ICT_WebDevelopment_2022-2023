@@ -8,7 +8,7 @@
         <meta name="author" content="Bakhireva Irina">
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Home - Project documentation</title>
+        <title>Pr3.1 - Project documentation</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -36,7 +36,7 @@
                             <li class="navitem">
                                 <a href=".." class="nav-link">Home</a>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Labs <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -175,30 +175,30 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="./" class="dropdown-item active">Home</a>
+    <a href="../lr4/" class="dropdown-item">Home</a>
 </li>
             
 <li>
-    <a href="common/" class="dropdown-item">Общее</a>
+    <a href="../lr4/common/" class="dropdown-item">Общее</a>
 </li>
             
 <li>
-    <a href="applicant/" class="dropdown-item">Applicant</a>
+    <a href="../lr4/applicant/" class="dropdown-item">Applicant</a>
 </li>
             
 <li>
-    <a href="hr/" class="dropdown-item">HR</a>
+    <a href="../lr4/hr/" class="dropdown-item">HR</a>
 </li>
     </ul>
   </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Practical work <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../pr3.1/" class="dropdown-item">Pr3.1</a>
+    <a href="./" class="dropdown-item active">Pr3.1</a>
 </li>
                                 </ul>
                             </li>
@@ -211,12 +211,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../lab3/vacancys_get/" class="nav-link">
+                                <a rel="prev" href="../lr4/hr/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="common/" class="nav-link">
+                                <a rel="next" class="nav-link disabled">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -238,9 +238,17 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#no4" class="nav-link">Лабораторная работа №4</a>
+            <li class="nav-item" data-level="1"><a href="#31" class="nav-link">Практическая работа 3.1</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#vue" class="nav-link">Пользовательский интерфейс на Vue</a>
+            <li class="nav-item" data-level="2"><a href="#1" class="nav-link">Задание 1</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#2" class="nav-link">Задание 2</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#3" class="nav-link">Задание 3</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -251,15 +259,91 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="no4">Лабораторная работа №4</h1>
-<h2 id="vue">Пользовательский интерфейс на Vue</h2>
-<p>Интерфейс позволяет взаимодействовать с информационной системой двум типам пользователей: соискателям и HR агентам. У каждого пользователя есть общие представления (для управления аккаунтом) и индивидуальные. Права доступа к каждому эндпоинту проверяются через сохраненное в хранилище состояние, а так же при каждом запросе на сервер.   </p>
-<p>Использованные плагины и библиотеки:<br />
-- <code>Pinia</code> - хранилище для авторизации между страницами<br />
-- <code>Vue Router</code> - навигация между страницами<br />
-- <code>Vuetify</code> - стилизованные компоненты<br />
-- <code>Vue Datepicker</code> - компонент Datepicker для выбора даты<br />
-- <code>Axios</code> - для отправки запросов на сервер  </p></div>
+<h1 id="31">Практическая работа 3.1</h1>
+<h2 id="1">Задание 1</h2>
+<pre><code class="language-py">from project_first_app.models import *
+from django.utils import timezone
+
+&quot;&quot;&quot; 3.1.1
+Напишите запрос на создание 6-7 новых автовладельцев и 5-6 автомобилей,
+каждому автовладельцу назначьте удостоверение и от 1 до 3 автомобилей.
+Задание можете выполнить либо в интерактивном режиме интерпретатора,
+либо в отдельном python-файле.
+Результатом должны стать запросы и отображение созданных объектов.
+&quot;&quot;&quot;
+
+for i in range(6):
+    Property.objects.create(
+        owner=License.objects.create(
+            owner=Owner.objects.create(
+                username='new_batch_user' + str(i),
+                first_name=['Владислав', 'Анатолий',
+                            'Степан', 'Евгений', 'Олег', 'Сергей'][i],
+                last_name=['Петров', 'Попов', 'Антонов',
+                           'Иванов', 'Егоров', 'Орлов'][i]
+            ),
+            license_number='1234567' + str(i),
+            issue_date=timezone.now()).owner,
+        car=Car.objects.create(
+            number='AO17' + str(i),
+            manufacturer='Ford',
+            model='Focus',
+            color=['Красный', 'Синий', 'Белый',
+                   'Серый', 'Желтый', 'Оранжевый'][i]
+        ), start_date=timezone.now()
+    )
+</code></pre>
+<h2 id="2">Задание 2</h2>
+<pre><code class="language-py">from project_first_app.models import *
+from django.utils import timezone
+
+&quot;&quot;&quot; 3.1.2
+По созданным в пр.1 данным написать следующие запросы на фильтрацию:
+
+ - Где это необходимо, добавьте related_name к полям модели
+ - Выведете все машины марки “Toyota” (или любой другой марки, которая у вас есть)
+ - Найти всех водителей с именем “Олег” (или любым другим именем на ваше усмотрение)
+ - Взяв любого случайного владельца получить его id, и по этому id получить экземпляр удостоверения в виде объекта модели (можно в 2 запроса)
+ - Вывести всех владельцев красных машин (или любого другого цвета, который у вас присутствует)
+ - Найти всех владельцев, чей год владения машиной начинается с 2010 (или любой другой год, который присутствует у вас в базе)
+&quot;&quot;&quot;
+
+# Выбираем автомобили, у которых &quot;manufacturer&quot; - LADA
+Car.objects.filter(manufacturer='LADA')
+# Выбираем владельцев, у которых имя &quot;Олег&quot;
+Owner.objects.filter(first_name='Олег')
+# Выбираем лицензии, у которых владалец равен последнему добавленному владельцу в базу данных
+License.objects.get(owner=Owner.objects.last())
+# Выбираем владельцев, у которых в собственности (owner_property) есть автомобиль (car) с нужным цветом (color)
+Owner.objects.filter(owner_property__car__color='Синий')
+# Выбираем владельцев, у которых есть собственность (owner_property), полученная после 2010 года (start_date - начало владения, gte - greater_than or equals, больше или равно) 
+Owner.objects.filter(owner_property__start_date__gte=timezone.date(2010, 1, 1))
+</code></pre>
+<h2 id="3">Задание 3</h2>
+<pre><code class="language-py">from django.db.models import Count
+from project_first_app.models import *
+
+&quot;&quot;&quot; 3.1.3
+Необходимо реализовать следующие запросы:
+ - Вывод даты выдачи самого старшего водительского удостоверения
+ - Укажите самую позднюю дату владения машиной, имеющую какую-то из существующих моделей в вашей базе
+ - Выведите количество машин для каждого водителя
+ - Подсчитайте количество машин каждой марки
+ - Отсортируйте всех автовладельцев по дате выдачи удостоверения 
+(Примечание: чтобы не выводить несколько раз одни и те же таблицы воспользуйтесь методом .distinct())
+&quot;&quot;&quot;
+
+# Выбираем все лицензии, сортируем (order_by) по дате выдачи (issue_date) и берем самую первую ([0]). Сортировка по дефолту - по возрастанию, поэтому получим самое старшее удостоверение
+License.objects.order_by(&quot;issue_date&quot;)[0]
+# Выбираем собственность, у которой модель автомобиля - Focus, сортируем по дате владения (order_by и start_date), но по убыванию (знак &quot;-&quot; gthtl start_date). Берем первую собственность, поле с датой начала собственности (start_date) и выбираем дату (date())
+Property.objects.filter(car__model=&quot;Focus&quot;).order_by(&quot;-start_date&quot;)[0].start_date.date()
+# Берем всех владельцев и у каждого считаем количество автомобилей (Owner.objects.annotate(Count(&quot;car&quot;))), потом составляем пары &quot;Имя Фамилия&quot;: &quot;Количество машин во владении&quot; (f'{owner.first_name} {owner.last_name}': owner.car__count})
+[{f'{owner.first_name} {owner.last_name}': owner.car__count} for owner in Owner.objects.annotate(Count(&quot;car&quot;))]
+# Выбираем поле manufacturer у всех автомобилей, считаем, сколько автомобилей нашлось на каждое значение поля, выводим парами &quot;марка&quot; - &quot;количество&quot;
+[{car.get('manufacturer'): car.get('id__count')} for car in Car.objects.values(&quot;manufacturer&quot;).annotate(Count(&quot;id&quot;))]
+# Выбираем владельцев, сортируем (order_by) по дате выдачи лицензии (license__issue_date) и берем уникальных (distinct()), потому что может быть несколько удостоверений
+Owner.objects.order_by(&quot;license__issue_date&quot;).distinct()
+</code></pre></div>
             </div>
         </div>
 
