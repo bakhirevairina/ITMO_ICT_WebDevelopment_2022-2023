@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Bakhireva Irina">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Общее - Project documentation</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Project documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Labs <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../lr1/" class="dropdown-item">Lab 1</a>
+</li>
+                                    
+<li>
+    <a href="../../lr2/" class="dropdown-item">Lab 2</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Lab 3</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../lr3/" class="dropdown-item">Home</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">End Points</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">COMPANY</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../lab3/company_my_get/" class="dropdown-item">[ GET ] /company/my/</a>
+</li>
+            
+<li>
+    <a href="../../lab3/company_my_vacancy_id_get/" class="dropdown-item">[ GET ] /company/my/vacancy/{ID}/</a>
+</li>
+            
+<li>
+    <a href="../../lab3/company_my_vacancy_id_patch/" class="dropdown-item">[ PATCH ] /company/my/vacancy/{ID}/</a>
+</li>
+            
+<li>
+    <a href="../../lab3/company_my_vacancy_id_cvs_get/" class="dropdown-item">[ GET ] /company/my/vacancy/{ID}/cvs/</a>
+</li>
+            
+<li>
+    <a href="../../lab3/company_my_vacancys_get/" class="dropdown-item">[ GET ] /company/my/vacancys/</a>
+</li>
+            
+<li>
+    <a href="../../lab3/company_my_vacancys_post/" class="dropdown-item">[ POST ] /company/my/vacancys/</a>
+</li>
+            
+<li>
+    <a href="../../lab3/company_id_get/" class="dropdown-item">[ GET ] /company/{ID}/</a>
+</li>
+            
+<li>
+    <a href="../../lab3/companys_get/" class="dropdown-item">[ GET ] /companys/</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">COURSES</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../lab3/courses_get/" class="dropdown-item">[ GET ] /courses/</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CV</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../lab3/cv_my_get/" class="dropdown-item">[ GET ] /cv/my/</a>
+</li>
+            
+<li>
+    <a href="../../lab3/cv_my_patch/" class="dropdown-item">[ PATCH ] /cv/my/</a>
+</li>
+            
+<li>
+    <a href="../../lab3/cv_my_courses_for_me_get/" class="dropdown-item">[ GET ] /cv/my/courses_for_me/</a>
+</li>
+            
+<li>
+    <a href="../../lab3/cv_my_specializations_get/" class="dropdown-item">[ GET ] /cv/my/specializations/</a>
+</li>
+            
+<li>
+    <a href="../../lab3/cv_my_vacancys_get/" class="dropdown-item">[ GET ] /cv/my/vacancys/</a>
+</li>
+            
+<li>
+    <a href="../../lab3/cv_id_get/" class="dropdown-item">[ GET ] /cv/{ID}/</a>
+</li>
+            
+<li>
+    <a href="../../lab3/cvs_get/" class="dropdown-item">[ GET ] /cvs/</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">SPECIALIZATIONS</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../lab3/specializations_get/" class="dropdown-item">[ GET ] /specializations/</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">VACANCIES</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../lab3/vacancy_id_get/" class="dropdown-item">[ GET ] /vacancy/{ID}/</a>
+</li>
+            
+<li>
+    <a href="../../lab3/vacancys_get/" class="dropdown-item">[ GET ] /vacancys/</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Lab 4</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">Home</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">Общее</a>
+</li>
+            
+<li>
+    <a href="../applicant/" class="dropdown-item">Applicant</a>
+</li>
+            
+<li>
+    <a href="../hr/" class="dropdown-item">HR</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../applicant/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">Общие представления и компоненты</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#homeviewvue" class="nav-link">HomeView.vue</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#loginviewvue" class="nav-link">LoginView.vue</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#registerviewvue" class="nav-link">RegisterView.vue</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#commoneditprofilevue" class="nav-link">common/EditProfile.vue</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#commonlogoutvue" class="nav-link">common/Logout.vue</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#commonprofilevue" class="nav-link">common/Profile.vue</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#storesuserjs" class="nav-link">stores/user.js</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#routerindexjs" class="nav-link">router/index.js</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="_1">Общие представления и компоненты</h1>
+<h2 id="homeviewvue">HomeView.vue</h2>
+<p>"Домашная" страница. Если пользователь не авторизован, отправляет его обратно на страницу авторизации, иначе отправляет
+пользователя на страницу просмотра профиля.</p>
+<h2 id="loginviewvue">LoginView.vue</h2>
+<p>Страница авторизации. Использует компонент <code>LoginFormComponent.vue</code>. На странице присутствует форма из 2 полей и
+компонент для отображения ошибок.</p>
+<pre><code class="language-Vue">
+&lt;v-form @submit.prevent=&quot;onSubmit&quot;&gt;
+&lt;v-alert :text=&quot;error&quot; v-if=&quot;error&quot; type=&quot;error&quot;/&gt;
+&lt;v-text-field v-model=&quot;username&quot; name=&quot;username&quot; label=&quot;Логин&quot;/&gt;
+&lt;v-text-field v-model=&quot;password&quot; name=&quot;password&quot; type=&quot;password&quot; label=&quot;Пароль&quot;/&gt;
+&lt;v-btn color=&quot;primary&quot; type=&quot;submit&quot;&gt;Войти&lt;/v-btn&gt;
+&lt;/v-form&gt;
+</code></pre>
+<h2 id="registerviewvue">RegisterView.vue</h2>
+<p>Страница регистрации. Использует компонент <code>RegisterFormComponent.vue</code>. На странице присутствует форма, которая
+генерируется для заранее заготовленного набора полей, и компонент для отображения ошибок.</p>
+<pre><code class="language-js">const fields = [
+    {title: &quot;Логин&quot;, key: &quot;username&quot;},
+    {title: &quot;Пароль&quot;, key: &quot;password&quot;},
+    {title: &quot;Имя&quot;, key: &quot;first_name&quot;},
+    {title: &quot;Фамилия&quot;, key: &quot;last_name&quot;},
+    {title: &quot;Телефон&quot;, key: &quot;phone&quot;},
+    {title: &quot;Почта&quot;, key: &quot;email&quot;},
+];
+</code></pre>
+<pre><code class="language-Vue">
+&lt;v-form @submit.prevent=&quot;onSubmit&quot;&gt;
+&lt;v-alert :text=&quot;error&quot; v-if=&quot;error&quot; type=&quot;error&quot;/&gt;
+&lt;v-text-field v-for=&quot;field in fields&quot;
+              v-bind:key=&quot;field.key&quot;
+              v-model=&quot;profile[field.key]&quot;
+              :name=&quot;field.key&quot;
+              :label=&quot;field.title&quot;/&gt;
+&lt;v-btn color=&quot;primary&quot; type=&quot;submit&quot;&gt;Зарегистрироваться&lt;/v-btn&gt;
+&lt;/v-form&gt;
+</code></pre>
+<h2 id="commoneditprofilevue">common/EditProfile.vue</h2>
+<p>Представление для редактирование профиля пользователя. Отредактировать можно ограниченный набор полей, по которому
+строится форма.</p>
+<pre><code class="language-js">const fields = [
+    {title: &quot;Имя&quot;, key: &quot;first_name&quot;},
+    {title: &quot;Фамилия&quot;, key: &quot;last_name&quot;},
+    {title: &quot;Телефон&quot;, key: &quot;phone&quot;},
+    {title: &quot;Почта&quot;, key: &quot;email&quot;},
+]
+</code></pre>
+<pre><code class="language-Vue">
+&lt;v-form @submit.prevent=&quot;onSubmit&quot;&gt;
+&lt;v-alert :text=&quot;error&quot; v-if=&quot;error&quot; type=&quot;error&quot;/&gt;
+&lt;v-text-field v-for=&quot;field in fields&quot;
+              v-bind:key=&quot;field.key&quot;
+              v-model=&quot;profile[field.key]&quot;
+              :name=&quot;field.key&quot;
+              :label=&quot;field.title&quot;/&gt;
+&lt;v-btn color=&quot;primary&quot; type=&quot;submit&quot;&gt;Сохранить&lt;/v-btn&gt;
+&lt;/v-form&gt;
+</code></pre>
+<h2 id="commonlogoutvue">common/Logout.vue</h2>
+<p>Представление, которое очищает данные об авторизации и возвращает пользователя на форму авторизации.</p>
+<pre><code class="language-js">onMounted(() =&gt; {
+    if (user.isAuth) {
+        axios
+            .post(&quot;/auth/token/logout/&quot;)
+            .finally(() =&gt; {
+                user.updateToken();
+                router.push({name: &quot;Login&quot;});
+            });
+    }
+});
+</code></pre>
+<h2 id="commonprofilevue">common/Profile.vue</h2>
+<p>Представление отображает всю общедоступную информацию о текущем пользовательском аккаунте, которая представлена в объекте.</p>
+<pre><code class="language-js">const headers = [
+    {title: &quot;ID&quot;, key: &quot;id&quot;},
+    {title: &quot;Имя&quot;, key: &quot;first_name&quot;},
+    {title: &quot;Фамилия&quot;, key: &quot;last_name&quot;},
+    {title: &quot;Телефон&quot;, key: &quot;phone&quot;},
+    {title: &quot;Почта&quot;, key: &quot;email&quot;},
+    {title: &quot;Роль&quot;, key: &quot;role&quot;}
+].filter(header =&gt; user.value[header.key] !== undefined);
+</code></pre>
+<pre><code class="language-Vue">
+&lt;v-row v-for=&quot;header in headers&quot; v-bind:key=&quot;header.key&quot; class=&quot;border-b&quot;&gt;
+&lt;v-col class=&quot;font-weight-bold&quot;&gt;{{ header.title }}&lt;/v-col&gt;
+&lt;v-col&gt;{{ user[header.key] }}&lt;/v-col&gt;
+&lt;/v-row&gt;
+</code></pre>
+<h2 id="storesuserjs">stores/user.js</h2>
+<p>Хранилище, в котором сохраняются объекты токена для авторизации пользователя и пользовательская роль. Токен записывается
+в число заголовков, отправляемых при каждом запросе на сервер библиотекой <code>axios</code>. При изменении данные сохраняются в
+локальное хранилище (<code>localStorage</code>).</p>
+<pre><code class="language-js">const token = ref(localStorage.getItem(&quot;token&quot;));
+const role = ref(localStorage.getItem(&quot;role&quot;));
+
+if (token.value) axios.defaults.headers.common[&quot;Authorization&quot;] = `Token ${token.value}`;
+else axios.defaults.headers.common[&quot;Authorization&quot;] = &quot;&quot;;
+</code></pre>
+<pre><code class="language-js">function updateToken(newToken = &quot;&quot;, newRole = &quot;&quot;) {
+    token.value = newToken;
+    role.value = newRole;
+
+    if (newToken) axios.defaults.headers.common[&quot;Authorization&quot;] = `Token ${newToken}`;
+    else axios.defaults.headers.common[&quot;Authorization&quot;] = &quot;&quot;;
+
+    localStorage.setItem(&quot;token&quot;, newToken);
+    localStorage.setItem(&quot;role&quot;, newRole);
+}
+</code></pre>
+<h2 id="routerindexjs">router/index.js</h2>
+<p>Роутер для навигации между представлениями. Каждому представлению определяется адрес, имя и указывается компонент,
+который необходимо рендерить. Индивидуальные представления реализованы через вложенные пути (аттрибут <code>children</code>).</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

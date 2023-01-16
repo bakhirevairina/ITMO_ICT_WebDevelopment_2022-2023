@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Bakhireva Irina">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Applicant - Project documentation</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Project documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Labs <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../lr1/" class="dropdown-item">Lab 1</a>
+</li>
+                                    
+<li>
+    <a href="../../lr2/" class="dropdown-item">Lab 2</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Lab 3</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../lr3/" class="dropdown-item">Home</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">End Points</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">COMPANY</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../lab3/company_my_get/" class="dropdown-item">[ GET ] /company/my/</a>
+</li>
+            
+<li>
+    <a href="../../lab3/company_my_vacancy_id_get/" class="dropdown-item">[ GET ] /company/my/vacancy/{ID}/</a>
+</li>
+            
+<li>
+    <a href="../../lab3/company_my_vacancy_id_patch/" class="dropdown-item">[ PATCH ] /company/my/vacancy/{ID}/</a>
+</li>
+            
+<li>
+    <a href="../../lab3/company_my_vacancy_id_cvs_get/" class="dropdown-item">[ GET ] /company/my/vacancy/{ID}/cvs/</a>
+</li>
+            
+<li>
+    <a href="../../lab3/company_my_vacancys_get/" class="dropdown-item">[ GET ] /company/my/vacancys/</a>
+</li>
+            
+<li>
+    <a href="../../lab3/company_my_vacancys_post/" class="dropdown-item">[ POST ] /company/my/vacancys/</a>
+</li>
+            
+<li>
+    <a href="../../lab3/company_id_get/" class="dropdown-item">[ GET ] /company/{ID}/</a>
+</li>
+            
+<li>
+    <a href="../../lab3/companys_get/" class="dropdown-item">[ GET ] /companys/</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">COURSES</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../lab3/courses_get/" class="dropdown-item">[ GET ] /courses/</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CV</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../lab3/cv_my_get/" class="dropdown-item">[ GET ] /cv/my/</a>
+</li>
+            
+<li>
+    <a href="../../lab3/cv_my_patch/" class="dropdown-item">[ PATCH ] /cv/my/</a>
+</li>
+            
+<li>
+    <a href="../../lab3/cv_my_courses_for_me_get/" class="dropdown-item">[ GET ] /cv/my/courses_for_me/</a>
+</li>
+            
+<li>
+    <a href="../../lab3/cv_my_specializations_get/" class="dropdown-item">[ GET ] /cv/my/specializations/</a>
+</li>
+            
+<li>
+    <a href="../../lab3/cv_my_vacancys_get/" class="dropdown-item">[ GET ] /cv/my/vacancys/</a>
+</li>
+            
+<li>
+    <a href="../../lab3/cv_id_get/" class="dropdown-item">[ GET ] /cv/{ID}/</a>
+</li>
+            
+<li>
+    <a href="../../lab3/cvs_get/" class="dropdown-item">[ GET ] /cvs/</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">SPECIALIZATIONS</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../lab3/specializations_get/" class="dropdown-item">[ GET ] /specializations/</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">VACANCIES</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../lab3/vacancy_id_get/" class="dropdown-item">[ GET ] /vacancy/{ID}/</a>
+</li>
+            
+<li>
+    <a href="../../lab3/vacancys_get/" class="dropdown-item">[ GET ] /vacancys/</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Lab 4</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">Home</a>
+</li>
+            
+<li>
+    <a href="../common/" class="dropdown-item">Общее</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">Applicant</a>
+</li>
+            
+<li>
+    <a href="../hr/" class="dropdown-item">HR</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../common/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../hr/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">Представления для соискателя</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#applicantvue" class="nav-link">Applicant.vue</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#applicantavailablecoursesvue" class="nav-link">applicant/AvailableCourses.vue</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#applicantcompaniesvue" class="nav-link">applicant/Companies.vue</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#applicantcompanyvue" class="nav-link">applicant/Company.vue</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#applicantmycvvue" class="nav-link">applicant/MyCV.vue</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#applicantvacanciesformevue" class="nav-link">applicant/VacanciesForMe.vue</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="_1">Представления для соискателя</h1>
+<h2 id="applicantvue">Applicant.vue</h2>
+<p>Представление, которое отвечает за отрисовку вложенного роутинга. Так же проверяются права доступа пользователя к
+дальнейшим представлениям.</p>
+<pre><code class="language-js">const router = useRouter()
+const user = useUserStore();
+
+onMounted(() =&gt; {
+    if (!user.isApplicant) {
+        user.updateToken();
+        router.push({name: &quot;Login&quot;});
+    }
+})
+
+</code></pre>
+<h2 id="applicantavailablecoursesvue">applicant/AvailableCourses.vue</h2>
+<p>Представление отображает список доступных для прохождения соискателем курсов. Список доступных курсов получается при
+отрисовке страницы и рендерится через <code>v-data-table</code> с заменой шаблона для полей со специализацией, чтобы оставить
+только название.</p>
+<pre><code class="language-Vue">
+&lt;v-data-table
+    :items=&quot;courses&quot;
+    :headers=&quot;headers&quot;
+    class=&quot;elevation-1&quot;&gt;
+&lt;template v-slot:item.spec=&quot;{ item }&quot;&gt;
+    {{ getSpecializationName(item.raw.spec) }}
+&lt;/template&gt;
+&lt;template v-slot:item.required_spec=&quot;{ item }&quot;&gt;
+    {{ item.raw.required_spec ? getSpecializationName(item.raw.required_spec) : &quot;-&quot; }}
+&lt;/template&gt;
+&lt;/v-data-table&gt;
+</code></pre>
+<h2 id="applicantcompaniesvue">applicant/Companies.vue</h2>
+<p>Представление отображает список всех компаний в информационной системе. Список компаний отображается
+через <code>v-data-table</code> с одним кастомным шаблоном со ссылкой на более подробную информацию о компании.</p>
+<pre><code class="language-Vue">
+&lt;v-data-table
+    :items=&quot;companys&quot;
+    :headers=&quot;headers&quot;
+    class=&quot;elevation-1&quot;&gt;
+&lt;template v-slot:item.info=&quot;{ item }&quot;&gt;
+    &lt;v-btn
+        :to=&quot;{name: 'Company', params: { id: item.raw.id}}&quot;&gt;
+        Подробнее
+    &lt;/v-btn&gt;
+&lt;/template&gt;
+&lt;/v-data-table&gt;
+</code></pre>
+<h2 id="applicantcompanyvue">applicant/Company.vue</h2>
+<p>Представление отображает всю информацию о конкретной компании по ее идентификатору из адресной строки. Информация отрисовывается с использованием нескольких компонентов, каждый из которых отвечает за отрисовку своей части информации.</p>
+<pre><code class="language-Vue">&lt;h1 class=&quot;my-6&quot;&gt;Компания {{ company_id }}&lt;/h1&gt;
+&lt;CompanyInfoComponent :company=&quot;company&quot;/&gt;
+
+&lt;h1 class=&quot;my-6&quot;&gt;HR&lt;/h1&gt;
+&lt;HRInfoComponent :hr=&quot;company.hr.user&quot;/&gt;
+
+&lt;h1 class=&quot;my-6&quot;&gt;Вакансии&lt;/h1&gt;
+&lt;v-container class=&quot;border my-6&quot; v-for=&quot;vacancy in company.vacancies&quot; v-bind:key=&quot;vacancy.id&quot;&gt;
+&lt;VacancyInfoComponent :vacancy=&quot;vacancy&quot;/&gt;
+&lt;div class=&quot;header my-6&quot;&gt;Специализация&lt;/div&gt;
+&lt;v-list&gt;
+    &lt;v-list-item v-for=&quot;spec in vacancy.specs&quot; v-bind:key=&quot;spec.id&quot;&gt;
+        {{ getSpecializationName(spec) }}
+    &lt;/v-list-item&gt;
+&lt;/v-list&gt;
+&lt;/v-container&gt;
+</code></pre>
+<h2 id="applicantmycvvue">applicant/MyCV.vue</h2>
+<p>Представление отображает всю информацию о текущем резюме соискателя. Информация отрисовывается с использованием нескольких компонентов, каждый из которых отвечает за отрисовку своей части информации.</p>
+<pre><code class="language-Vue">&lt;h1&gt;Мое резюме&lt;/h1&gt;
+&lt;h2&gt;Информация о пользователе&lt;/h2&gt;
+&lt;v-container class=&quot;my-6&quot;&gt;
+&lt;UserInfoComponent :user=&quot;cv_user&quot;/&gt;
+&lt;/v-container&gt;
+
+&lt;h2&gt;История работы&lt;/h2&gt;
+&lt;div class=&quot;my-6&quot;&gt;
+&lt;WorkHistoryComponent :work_history=&quot;cv_work_history&quot;/&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;История Образования&lt;/h2&gt;
+&lt;div class=&quot;my-6&quot;&gt;
+&lt;EducationListComponent :education=&quot;cv_education&quot;/&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Доступные курсы&lt;/h2&gt;
+&lt;div class=&quot;my-6&quot;&gt;
+&lt;AvailableCoursesListComponent :courses=&quot;cv_courses&quot;/&gt;
+&lt;/div&gt;
+</code></pre>
+<pre><code class="language-js">const cv = ref({});
+const cv_user = computed(() =&gt; cv.value.user);
+const cv_work_history = computed(() =&gt; cv.value.work_history);
+const cv_education = computed(() =&gt; cv.value.education);
+const cv_courses = computed(() =&gt; cv.value.courses);
+</code></pre>
+<h2 id="applicantvacanciesformevue">applicant/VacanciesForMe.vue</h2>
+<p>Представление отображает список вакансий, доступных с текущим резюме пользователя. </p>
+<pre><code class="language-Vue">&lt;v-container class=&quot;border my-6&quot; v-for=&quot;vacancy in vacancys&quot;&gt;
+&lt;div class=&quot;header my-6&quot;&gt;Вакансия&lt;/div&gt;
+&lt;VacancyInfoComponent :vacancy=&quot;vacancy&quot;/&gt;
+
+&lt;div class=&quot;header my-6&quot;&gt;Специализация&lt;/div&gt;
+&lt;v-list&gt;
+    &lt;v-list-item v-for=&quot;spec in vacancy.specs&quot; v-bind:key=&quot;spec.id&quot;&gt;
+        {{ getSpecializationName(spec) }}
+    &lt;/v-list-item&gt;
+&lt;/v-list&gt;
+
+&lt;div class=&quot;header my-6&quot;&gt;Компания&lt;/div&gt;
+&lt;CompanyInfoComponent :company=&quot;vacancy.company&quot;/&gt;
+
+&lt;div class=&quot;header my-6&quot;&gt;HR&lt;/div&gt;
+&lt;HRInfoComponent :hr=&quot;vacancy.company.hr.user&quot;/&gt;
+&lt;/v-container&gt;
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
